@@ -5,7 +5,6 @@
 	--accent-color-2: #9AA0A6;
 	--accent-color-3: #652120;
 	font-size: 16px;
-	font-size: 1vw;
 }
 
 body {
@@ -28,13 +27,14 @@ img {
 }
 
 .content {
-	width: 67%;
+	width: 66%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	color: var(--text-color);
 	font-size: calc(12px + (18 - 16) * ((100vw - 400px) / (550 - 200)));
+	padding: 2rem;
 }
 
 .form {
@@ -45,18 +45,20 @@ img {
 
 legend {
 	color: var(--accent-color-1);
+	font-size: 1.2rem;
 }
 
 .form-divider {
 	display: flex;
-	padding: 3vw;
+	flex-direction: column;
+	padding: 1rem;
 }
 
 .column1,.column2 {
 	display: flex;
 	flex-direction: column;
-	padding: 2vw;
-	justify-content: space-between;
+	padding: 1rem;
+	gap: 1rem;
 }
 
 .input {
@@ -64,8 +66,14 @@ legend {
 	justify-content: space-between;
 }
 
+.all-inputs {
+	display: flex;
+}
+
 .create {
 	display: flex;
+	justify-content: flex-end;
+	margin-top: 1rem;
 }
 
 .button {
@@ -75,16 +83,21 @@ legend {
 	color: var(--body-color);
 	padding: 12px 32px;
 	text-align: center;
-	display: flex;
-	align-self: end;
-	justify-content: center;
+	cursor: pointer;
 }
 
 .already {
 	color: var(--accent-color-2);
+	font-size: 0.9rem;
+	margin-top: 1rem;
 }
 
 a {
 	color: var(--accent-color-3);
 	text-decoration: none;
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-around;
 }
