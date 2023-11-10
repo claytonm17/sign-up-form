@@ -17,6 +17,7 @@
 	display: flex;
 	border-radius: 10px;
 	margin: 50px;
+	filter: drop-shadow(2rem 2rem 1rem darkgray)
 }
 
 img {
@@ -39,7 +40,7 @@ img {
 	transform: translate(-50%, -50%);
 	background-color: #1D355799 ;
 	width: 100%;
-	font-size: 5vw;
+	font-size: 4.5vw;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -58,4 +59,35 @@ img {
 .credits a {
 	text-decoration: none;
 	color: var(--accent-color-1);
+}
+
+.contents {
+	background-color: var(--background-color);
+	width: 60%;
+	border-top-right-radius: 2vw;
+	border-bottom-right-radius: 2vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.row-1, .row-2, .row-3 {
+	display: flex;
+	padding: 1vw;
+	margin: 1vw;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+fieldset {
+	border: none;
+}
+
+.form-contents {
+	border: solid var(--accent-color-2) 1px;
+	border-radius: 1vw;
 }
