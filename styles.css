@@ -1,9 +1,10 @@
 :root {
 	--text-color: #1D3557;
-	--background-color: #F1FAEE;
+	--background-color: #FAFAFA;
 	--accent-color-1: #A8DADC;
 	--accent-color-2: #457B9D;
 	--accent-color-3: #E63946;
+	--accent-background: aliceblue;
 	font-size: 16px;
 }
 
@@ -89,8 +90,7 @@ fieldset {
 }
 
 .form-contents {
-	border: solid var(--accent-color-2) 1px;
-	border-radius: 1vw;
+	background-color: var(--accent-background);
 }
 
 .form-grid {
@@ -98,6 +98,7 @@ fieldset {
 	grid-template-columns: auto auto;
 	gap: 3vw;
 	padding: 2vw;
+	padding-top: 0vw;
 }
 
 .input, .input-2 {
@@ -107,3 +108,45 @@ fieldset {
 	flex-direction: column;
 }
 
+.input,.input-2>label {
+	color: var(--accent-color-2);
+	font-size: 1.5vw;
+	font-weight: 700;
+}
+
+.text {
+	color: var(--text-color);
+	padding: 2vw;
+	padding-bottom: 0vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.text>h2, .text>p {
+	width: 100%;
+}
+
+.submit {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 6vw;
+	padding-right: 6vw;
+}
+
+.submit>button {
+	background-color: #E63946;
+	padding: 1vw;
+	text-align: end;
+	color: var(--background-color);
+	border: none;
+	border-radius: 1vw;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.submit>small>a {
+	text-decoration: none;
+	color: var(--accent-color-2);
+	font-weight: 700;
+}
