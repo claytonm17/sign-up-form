@@ -73,6 +73,7 @@ img {
 
 .row-1, .row-2, .row-3 {
 	display: flex;
+	justify-content: space-between;
 	padding: 1vw;
 	margin: 1vw;
 }
@@ -91,3 +92,18 @@ fieldset {
 	border: solid var(--accent-color-2) 1px;
 	border-radius: 1vw;
 }
+
+.form-grid {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 3vw;
+	padding: 2vw;
+}
+
+.input, .input-2 {
+	width: 100%;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+}
+
